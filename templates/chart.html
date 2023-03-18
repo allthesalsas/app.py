@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="chart"></div>
+    <script>
+        var data = [{
+            x: [1, 2, 3],
+            y: [4, 5, 6],
+            type: 'bar'
+        }];
+
+        var layout = {
+            title: 'My Plotly Bar Chart'
+        };
+
+        var config = {
+            responsive: true
+        };
+
+        Plotly.newPlot('chart', data, layout, config);
+    </script>
+</body>
+</html>

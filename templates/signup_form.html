@@ -1,0 +1,38 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Signup</title>
+  </head>
+  <body>
+    <h1>Signup Form</h1>
+    <form action="/signup" method="POST">
+      <label for="name">Name (First/Last):</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="telegram">Telegram:</label>
+      <input type="text" id="telegram" name="telegram" required><br>
+
+      <label for="preferred contact">Preferred Contact Method:</label>
+      <select id="preferred contact" name="preferred contact">
+        <option value="email">Email</option>
+        <option value="telegram">Telegram</option>
+        <option value="phone">Phone</option>
+      </select><br>
+
+      <label for="organization name">Organization Name:</label>
+      <input type="text" id="organization name" name="organization name"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
+
+      <label for="jr-apikey">API Key:</label>
+      <input type="text" id="jr-apikey" name="jr-apikey" required><br>
+
+      <input type="submit" value="Signup">
+    </form>
+  </body>
+</html>

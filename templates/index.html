@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ChatGPT</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>ChatGPT</h1>
+    <div class="chatbox" id="chatbox">
+      <p class="bot-message">Hello! How can I assist you?</p>
+    </div>
+    <form class="message-box" id="message-form">
+      <input type="text" placeholder="Type your message here..." name="message" id="message-input" autocomplete="off">
+      <button type="submit" id="send-button">Send</button>
+    </form>
+    <div class="spinner" id="spinner">
+      <img src="{{ url_for('static', filename='img/spinner.gif') }}" alt="Loading...">
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
